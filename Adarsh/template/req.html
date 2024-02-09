@@ -99,33 +99,37 @@
 </script></p>
 
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-	<script>
-        const controls = [
-              'play-large',
-              'rewind',
-              'play', 
-              'fast-forward', 
-              'quality',
-              'progress', 
-              'current-time',
-              'duration',
-              'mute',
-              'volume',
-              'captions',
-              'settings',
-              'pip',
-              'airplay',
-              'download',
-              'fullscreen'
-            ];
-     
- document.addEventListener('DOMContentLoaded', () => {
-            const player = Plyr.setup('.player', { controls });
-        });
+<script>
+    const controls = [
+        'play-large',
+        'rewind',
+        'play', 
+        'fast-forward', 
+        'quality',
+        'progress', 
+        'current-time',
+        'duration',
+        'mute',
+        'volume',
+        'captions',
+        'settings',
+        'pip',
+        'airplay',
+        'download',
+        'fullscreen'
+    ];
 
-        const body = document.querySelector('body');
-        const footer = document.querySelector('footer');
-        const toogle = document.querySelector('.toogle');
-    </script>
+    const qualityOptions = [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240];
+    
+    const quality = { default: 720, options: qualityOptions };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const player = Plyr.setup('.player', { controls, quality });
+    });
+
+    const body = document.querySelector('body');
+    const footer = document.querySelector('footer');
+    const toggle = document.querySelector('.toggle');
+</script>
 </body>
 </html>
