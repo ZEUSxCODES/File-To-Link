@@ -29,7 +29,7 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/Film_Nest"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/FilmNest_Chat")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/anmol0700")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/FilmNest_Admins")],
                 ]
             ),
             
@@ -59,7 +59,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.id)
 
-        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n<b>❖ t.me/Film_Nest</b>**"
+        msg_text = "**Your Movie is ready to stream...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n<b>❖ t.me/Film_Nest</b>**"
         await m.reply_text(            
             text=msg_text.format(file_name, file_size, stream_link),
             
@@ -84,7 +84,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/Film_Nest"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/FilmNest_Chat")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/anmol0700")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/FilmNest_Admims")],
                 ]
             ),
             
@@ -118,7 +118,7 @@ async def about_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ UPDATES", url="https://t.me/Film_Nest"), InlineKeyboardButton("⚡ SUPPORT", url="https://t.me/FilmNest_Chat")],
-                    [InlineKeyboardButton("OWNER", url="https://t.me/anmol0700")],
+                    [InlineKeyboardButton("OWNER", url="https://t.me/FilmNest_Admins")],
                 ]
             ),
             
