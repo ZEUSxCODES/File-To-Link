@@ -24,11 +24,11 @@ routes = web.RouteTableDef()
 @routes.get("/", allow_head=True)
 async def root_route_handler(_):
     status_messages = [
-        "All systems are go!",
-        "We're up and running!",
-        "Ready to rock and roll!",
-        "Smooth sailing ahead!",
-        "Everything's looking peachy keen!",
+        "This is Private Website....",
+        "Works with specific stream/download links",
+        "Join our Telegram @Film_Nest!",
+        "we will provide streaming links there!",
+        "Made by Anmol & Ayush with ❤️!",
     ]
     bot_messages = [
         "Our Telegram bot, @" + StreamBot.username + ", is at your service!",
