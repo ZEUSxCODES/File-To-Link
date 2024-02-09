@@ -120,14 +120,18 @@
               'download',
               'fullscreen'
             ];
-     const quality = { default: 720, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
- document.addEventListener('DOMContentLoaded', () => {
-            const player = Plyr.setup('.player', { controls });
-        });
 
-        const body = document.querySelector('body');
-        const footer = document.querySelector('footer');
-        const toogle = document.querySelector('.toogle');
-    </script>
+    const qualityOptions = [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240];
+    
+    const quality = { default: 720, options: qualityOptions };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const player = Plyr.setup('.player', { controls, quality });
+    });
+
+    const body = document.querySelector('body');
+    const footer = document.querySelector('footer');
+    const toggle = document.querySelector('.toggle');
+</script>
 </body>
 </html>
